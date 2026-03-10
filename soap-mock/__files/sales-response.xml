@@ -1,0 +1,31 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:sales="http://example.com/sales">
+  <soap:Body>
+    <sales:getSalesResponse>
+      <sales:sales>
+
+        <sales:sale>
+          <sales:id>1</sales:id>
+          <sales:date>2025-03-10</sales:date>
+          <sales:product_id>2</sales:product_id>
+          <sales:sales_person_id>1</sales:sales_person_id>
+        </sales:sale>
+
+        <sales:sale>
+          <sales:id>2</sales:id>
+          <sales:date>2025-03-11</sales:date>
+          <sales:product_id>4</sales:product_id>
+          <sales:sales_person_id>3</sales:sales_person_id>
+        </sales:sale>
+
+        <sales:sale>
+          <sales:id>3</sales:id>
+          <sales:date>2025-03-12</sales:date>
+          <sales:product_id>1</sales:product_id>
+          <sales:sales_person_id>2</sales:sales_person_id>
+        </sales:sale>
+
+      </sales:sales>
+    </sales:getSalesResponse>
+  </soap:Body>
+</soap:Envelope>

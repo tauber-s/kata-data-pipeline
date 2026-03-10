@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/ws/sales",
+    "bodyPatterns": [
+      {
+        "contains": "getProducts"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/xml"
+    },
+    "bodyFileName": "products-response.xml"
+  }
+}

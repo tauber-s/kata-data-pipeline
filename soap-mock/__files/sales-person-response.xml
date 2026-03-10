@@ -1,0 +1,34 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:sales="http://example.com/sales">
+  <soap:Body>
+    <sales:getPersonsResponse>
+      <sales:Persons>
+
+        <sales:Person>
+          <sales:id>1</sales:id>
+          <sales:name>SalesPerson_1</sales:name>
+          <sales:city>Porto Alegre</sales:city>
+          <sales:state>RS</sales:state>
+          <sales:country>Brazil</sales:country>
+        </sales:Person>
+
+        <sales:Person>
+          <sales:id>2</sales:id>
+          <sales:name>SalesPerson_2</sales:name>
+          <sales:city>São Paulo</sales:city>
+          <sales:state>SP</sales:state>
+          <sales:country>Brazil</sales:country>
+        </sales:Person>
+
+        <sales:Person>
+          <sales:id>3</sales:id>
+          <sales:name>SalesPerson_3</sales:name>
+          <sales:city>Curitiba</sales:city>
+          <sales:state>PR</sales:state>
+          <sales:country>Brazil</sales:country>
+        </sales:Person>
+
+      </sales:Persons>
+    </sales:getPersonsResponse>
+  </soap:Body>
+</soap:Envelope>

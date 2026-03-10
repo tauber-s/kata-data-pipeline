@@ -1,0 +1,31 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:sales="http://example.com/sales">
+  <soap:Body>
+    <sales:getProductsResponse>
+      <sales:products>
+
+        <sales:product>
+          <sales:id>1</sales:id>
+          <sales:name>Toyota Corolla</sales:name>
+          <sales:price>23000</sales:price>
+          <sales:category>car</sales:category>
+        </sales:product>
+
+        <sales:product>
+          <sales:id>2</sales:id>
+          <sales:name>Honda Civic</sales:name>
+          <sales:price>25000</sales:price>
+          <sales:category>car</sales:category>
+        </sales:product>
+
+        <sales:product>
+          <sales:id>3</sales:id>
+          <sales:name>Ford Focus</sales:name>
+          <sales:price>22000</sales:price>
+          <sales:category>car</sales:category>
+        </sales:product>
+
+      </sales:products>
+    </sales:getProductsResponse>
+  </soap:Body>
+</soap:Envelope>
