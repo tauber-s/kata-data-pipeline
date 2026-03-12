@@ -15,7 +15,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class TopSalesmanCountry {
+public class TopSalesPersonCountry {
     @Id
     @Column(name = "sales_person_id")
     private Integer salesPersonId;

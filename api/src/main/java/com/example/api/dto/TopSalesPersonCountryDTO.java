@@ -1,6 +1,6 @@
 package com.example.api.dto;
 
-public record TopSalesmanCountryDTO(
+public record TopSalesPersonCountryDTO(
         String salesPersonName,
         Double totalSales
 ) {}

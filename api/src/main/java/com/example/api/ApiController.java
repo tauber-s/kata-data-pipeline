@@ -1,7 +1,7 @@
 package com.example.api;
 
 import com.example.api.dto.TopSalesPerCityDTO;
-import com.example.api.dto.TopSalesmanCountryDTO;
+import com.example.api.dto.TopSalesPersonCountryDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,7 @@ public class ApiController {
     }
 
     @GetMapping("/top-salesman-country")
-    public List<TopSalesmanCountryDTO> getTopSalesmanCountry() {
-        return apiService.getTopSalesmanCountry();
+    public List<TopSalesPersonCountryDTO> getTopSalesPersonCountry() {
+        return apiService.getTopSalesPersonCountry();
     }
 }

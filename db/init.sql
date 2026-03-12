@@ -26,7 +26,7 @@ CREATE TABLE top_sales_per_city (
    total_sales NUMERIC
 );
 
-CREATE TABLE top_salesman_country (
+CREATE TABLE top_sales_person_country (
    sales_person_id INT REFERENCES sales_person(id)
    total_sales NUMERIC
 );

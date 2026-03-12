@@ -1,11 +1,11 @@
 package com.example.api;
 
 import com.example.api.dto.TopSalesPerCityDTO;
-import com.example.api.dto.TopSalesmanCountryDTO;
+import com.example.api.dto.TopSalesPersonCountryDTO;
 import com.example.api.entity.Product;
 import com.example.api.entity.SalesPerson;
 import com.example.api.entity.TopSalesPerCity;
-import com.example.api.entity.TopSalesmanCountry;
+import com.example.api.entity.TopSalesPersonCountry;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import lombok.AllArgsConstructor;
@@ -37,15 +37,15 @@ public class ApiService {
                 .collect(Collectors.toList());
     }
 
-    public List<TopSalesmanCountryDTO> getTopSalesmanCountry() {
-        List<TopSalesmanCountry> topSales = entityManager.createQuery(
-                "SELECT t FROM TopSalesmanCountry t ORDER BY t.totalSales DESC", TopSalesmanCountry.class
+    public List<TopSalesPersonCountryDTO> getTopSalesPersonCountry() {
+        List<TopSalesPersonCountry> topSales = entityManager.createQuery(
+                "SELECT t FROM TopSalesPersonCountry t ORDER BY t.totalSales DESC", TopSalesPersonCountry.class
         ).getResultList();
 
         return topSales.stream()
                 .map(t -> {
                     SalesPerson sp = entityManager.find(SalesPerson.class, t.getSalesPersonId());
-                    return new TopSalesmanCountryDTO(
+                    return new TopSalesPersonCountryDTO(
                             sp != null ? sp.getName() : null,
                             t.getTotalSales()
                     );
